@@ -45,34 +45,15 @@ The pipeline began with ingestion of the raw brochures and FAQs. These were chun
 
 The overall system architecture consisted of three layers. The first was the retrieval layer, which employed FAISS and MiniLM embeddings to extract relevant knowledge chunks. The second was the generation layer, where TinyLlama, fine-tuned with LoRA, produced the final text. The third was the persuasion layer, where the chatbot’s responses were evaluated and adjusted to align with principles of persuasive communication. This modular design allowed the system to remain grounded while adapting its tone to suit sales interactions.
 <img width="812" height="649" alt="image" src="https://github.com/user-attachments/assets/cd479f7c-b0f8-4e74-9d22-c8c147d11a7a" />
-![Chatbot Architecture](images/chatbot_architecture.png)
 
 ---
 
 ## Results & Discussion
-- **Performance metrics (qualitative):**
-  - ↑ 30% in lead conversion (vs FAQ bot baseline)  
-  - Fewer “I want to talk to a human” handovers  
-  - More detailed follow-up questions from users  
-
-- **Strengths:**  
-  - High factual accuracy due to retrieval grounding  
-  - Natural persuasion using Cialdini’s principles (e.g., social proof, scarcity)  
-
-- **Limitations:**  
-  - Requires continuous update of brochures/FAQs  
-  - Persuasion style needs brand-specific tuning  
+The chatbot demonstrated strong performance in maintaining factual accuracy and persuasiveness. Compared to a baseline FAQ bot, it led to higher user engagement and a reduction in cases where customers explicitly requested to speak with a human agent. Users interacted for longer sessions, and the system was able to handle detailed queries about cars in a manner that built trust and interest. The results showed that retrieval grounding reduced hallucinations, while the fine-tuned model successfully employed persuasive techniques aligned with Tata’s sales objectives. However, the system requires continuous updating of brochures and FAQs to remain current, and the persuasive framing must be carefully tuned to match evolving brand guidelines.
 
 ---
 
 ## Conclusion & Future Scope
-**Conclusion:**  
-The chatbot demonstrates that combining **retrieval grounding** with **persuasive fine-tuning** can significantly improve digital sales interactions.
-
-**Future Scope:**  
-- Integrate **real-time inventory** and **pricing APIs**  
-- Add **multilingual support** for Indian languages  
-- Deploy on WhatsApp/Telegram for direct buyer engagement  
-- Extend to **after-sales service chatbots** (maintenance, warranty queries)  
+The chatbot confirmed that combining retrieval grounding with persuasive fine-tuning is a promising approach for digital sales assistants. The conclusion is that such systems can bridge the gap between factual correctness and sales effectiveness in the automotive industry. For the future, the project can be extended by integrating real-time APIs for pricing and inventory, adding multilingual capabilities for wider Indian market reach. Additionally, expansion into after-sales service chatbots for maintenance and warranty queries represents a natural extension of this system’s capabilities.
 
 ---
