@@ -37,7 +37,7 @@ The raw documents contained extraneous details such as headers, disclaimers, and
 ---
 
 ## Methodology
-The pipeline began with ingestion of the raw brochures and FAQs. These were chunked into text passages of manageable length and embedded using MiniLM. The embeddings and associated metadata were indexed in FAISS, enabling efficient retrieval at query time. For each user query, the retriever fetched the top relevant passages which were then combined with the query and fed to TinyLlama. This model had been fine-tuned using LoRA to align with persuasive sales dialogue. The generated response thus combined factual correctness with persuasive framing. To evaluate the chatbot, a large language model was used as a judge to score responses along multiple axes including groundedness, persuasiveness, and tone.
+The pipeline began with ingestion of the raw brochures and FAQs. These were chunked into text passages of manageable length and embedded using MiniLM. The embeddings and associated metadata were indexed in FAISS, enabling efficient retrieval at query time. For each user query, the retriever fetched the top relevant passages which were then combined with the query and fed to TinyLlama. This model had been fine-tuned using LoRA to align with persuasive sales dialogue. The generated response thus combined factual correctness with persuasive framing. To evaluate the chatbot, a large language model was used as a judge to score responses using a framework that comprised correctness/groundedness, completeness, relevance, tone/helpfulness, and persuasiveness.
 
 ---
 
