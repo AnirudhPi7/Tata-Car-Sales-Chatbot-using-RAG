@@ -44,7 +44,7 @@ The pipeline began with ingestion of the raw brochures and FAQs. These were chun
 ## Model Architecture
 
 The overall system architecture consisted of three layers. The first was the retrieval layer, which employed FAISS and MiniLM embeddings to extract relevant knowledge chunks. The second was the generation layer, where TinyLlama, fine-tuned with LoRA, produced the final text. The third was the persuasion layer, where the chatbot’s responses were evaluated and adjusted to align with principles of persuasive communication. This modular design allowed the system to remain grounded while adapting its tone to suit sales interactions.
-<img width="2436" height="1947" alt="image" src="https://github.com/user-attachments/assets/cd479f7c-b0f8-4e74-9d22-c8c147d11a7a" />
+<img width="812" height="649" alt="image" src="https://github.com/user-attachments/assets/cd479f7c-b0f8-4e74-9d22-c8c147d11a7a" />
 ![Chatbot Architecture](images/chatbot_architecture.png)
 
 ---
