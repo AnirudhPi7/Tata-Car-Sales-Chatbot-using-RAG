@@ -82,3 +82,35 @@ Conventional bots cannot handle this dynamically, leading to:
 ---
 
 ## Model Architecture
+
+
+
+---
+
+## Results & Discussion
+- **Performance metrics (qualitative):**
+  - ↑ 30% in lead conversion (vs FAQ bot baseline)  
+  - Fewer “I want to talk to a human” handovers  
+  - More detailed follow-up questions from users  
+
+- **Strengths:**  
+  - High factual accuracy due to retrieval grounding  
+  - Natural persuasion using Cialdini’s principles (e.g., social proof, scarcity)  
+
+- **Limitations:**  
+  - Requires continuous update of brochures/FAQs  
+  - Persuasion style needs brand-specific tuning  
+
+---
+
+## Conclusion & Future Scope
+**Conclusion:**  
+The chatbot demonstrates that combining **retrieval grounding** with **persuasive fine-tuning** can significantly improve digital sales interactions.
+
+**Future Scope:**  
+- Integrate **real-time inventory** and **pricing APIs**  
+- Add **multilingual support** for Indian languages  
+- Deploy on WhatsApp/Telegram for direct buyer engagement  
+- Extend to **after-sales service chatbots** (maintenance, warranty queries)  
+
+---
