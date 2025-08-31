@@ -59,7 +59,7 @@ The chatbot confirmed that combining retrieval grounding with persuasive fine-tu
 
 ## Contributors
 Anirudh A
-Balaji M
+/n Balaji M
 Kowshik M
 Moneesh B
 
