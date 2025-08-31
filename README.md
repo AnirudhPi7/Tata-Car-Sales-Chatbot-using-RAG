@@ -45,7 +45,6 @@ The pipeline began with ingestion of the raw brochures and FAQs. These were chun
 The overall system architecture consisted of three layers. The first was the retrieval layer, which employed FAISS and MiniLM embeddings to extract relevant knowledge chunks. The second was the generation layer, where TinyLlama, fine-tuned with LoRA, produced the final text. The third was the persuasion layer, where the chatbot’s responses were evaluated and adjusted to align with principles of persuasive communication. This modular design allowed the system to remain grounded while adapting its tone to suit sales interactions.
 <img width="812" height="649" alt="image" src="https://github.com/user-attachments/assets/e3387696-e457-4396-8bc6-736ff8833b2a" />
 
-
 ---
 
 ## Results & Discussion
@@ -55,5 +54,13 @@ The chatbot demonstrated strong performance in maintaining factual accuracy and 
 
 ## Conclusion & Future Scope
 The chatbot confirmed that combining retrieval grounding with persuasive fine-tuning is a promising approach for digital sales assistants. The conclusion is that such systems can bridge the gap between factual correctness and sales effectiveness in the automotive industry. For the future, the project can be extended by integrating real-time APIs for pricing and inventory, adding multilingual capabilities for wider Indian market reach. Additionally, expansion into after-sales service chatbots for maintenance and warranty queries represents a natural extension of this system’s capabilities.
+
+---
+
+## Contributors
+Anirudh A
+Balaji M
+Kowshik M
+Moneesh B
 
 ---
